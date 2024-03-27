@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #152760;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .campaign {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .campaign h2 {
+            margin-top: 10px;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .accept-btn, .decline-btn {
+            padding: 8px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .accept-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .decline-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="campaigns">
+            <!-- Display campaigns posted by doctors -->
+            <div class="campaign">
+                <h2>Village Name: Village A</h2>
+                <p>Description: we want to make a campaign in the above village if any other village want our campaign please accept our request</p>
+                <!-- Accept and Decline buttons -->
+                <div class="action-buttons">
+                    <button class="accept-btn">Accept</button>
+                    <button class="decline-btn">Decline</button>
+                </div>
+            </div>
+
+            <!-- More campaigns can be displayed similarly -->
+        </section>
+    </div>
+</body>
+</html>

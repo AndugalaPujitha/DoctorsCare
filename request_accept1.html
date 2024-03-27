@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #152760;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 8000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .requests {
+            margin-top: 20px;
+        }
+
+        .request {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .request h3 {
+            margin-top: 10px;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .accept-btn, .decline-btn {
+            padding: 8px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .accept-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .decline-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="requests">
+            
+            <!-- Display requests with description, uploaded files, email, and location -->
+            <div class="request">
+                <h3>Email</h3>
+                <p>ashaworker@example.com</p>
+                <h3>Location</h3>
+                <p>City, Country</p>
+                <h3>Description</h3>
+                <p>the description provided by asha worker will be displayed here</p>
+                <h3>Uploaded File</h3>
+                <a href="#">View File</a>
+                <!-- Accept and Decline buttons -->
+                <div class="action-buttons">
+                    <button class="accept-btn">Accept</button>
+                    <button class="decline-btn">Decline</button>
+                </div>
+            </div>
+            <!-- More requests can be displayed similarly -->
+        </section>
+    </div>
+</body>
+</html>

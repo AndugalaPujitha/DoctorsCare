@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Camp Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 0px;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            margin-left: 70px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .request-info {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .doctor-info {
+            margin-bottom: 10px;
+        }
+
+        .doctor-info label {
+            font-weight: bold;
+        }
+
+        .approved-info {
+            margin-top: 20px;
+        }
+
+        .approved-info h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Camp Requests</h1>
+
+        <!-- Approved requests -->
+        <div class="request-info" id="approved-requests">
+            <h2>Approved Requests</h2>
+            <div class="approved-info">
+                <!-- Display approved requests -->
+                <div class="doctor-info">
+                    <label>Hospital Name:</label>
+                    <p>XYZ Hospital</p>
+                </div>
+                <div class="doctor-info">
+                    <label>Hospital Address:</label>
+                    <p>123 Street, City ABC</p>
+                </div>
+                <div class="doctor-info">
+                    <label>Contact Number:</label>
+                    <p>123-456-7890</p>
+                </div>
+                <div class="doctor-info">
+                    <label>Scheduled Date:</label>
+                    <p>2024-03-20</p>
+                </div>
+                <div class="doctor-info">
+                    <label>Camp Duration:</label>
+                    <p>5 days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

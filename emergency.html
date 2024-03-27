@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-image: url('Untitled design.png');  */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-content {
+            max-width: 1700px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Request Page</h1>
+        <form>
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" required><br>
+            
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" required><br>
+            
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required><br>
+            
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file"><br>
+            
+            <label for="camp-type">Choose Camp Type:</label>
+            <select id="camp-type" name="camp-type">
+                <option value="general">General Camp</option>
+                <option value="pandemic">Pandemic Camp</option>
+                <option value="seasonal">Seasonal Camp</option>
+            </select><br>
+            <br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" value="Request">
+        </form>
+    </div>
+</body>
+</html>
