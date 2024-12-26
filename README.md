@@ -30,4 +30,6 @@ Features
  Technologies Used
 - HTML
 - CSS
+- Java Script
+- Node JS, React JS
 
